@@ -1,0 +1,35 @@
+{
+  "name": "bailey",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bailey — the neobank + AI bookkeeper for AI-agent fleets on Arc. Your agents do the business. Bailey keeps the books.",
+  "scripts": {
+    "spike:7708": "tsx src/spike/eip7708.ts",
+    "index": "tsx src/indexer/run.ts",
+    "statement": "tsx src/close/statement.ts",
+    "register-entity": "node scripts/register-entity.mjs",
+    "fleet:onboard": "tsx src/fleet/onboard.ts",
+    "fleet:faucet": "tsx src/fleet/faucet.ts",
+    "fleet:balances": "tsx src/fleet/balances.ts",
+    "fleet:demo-txs": "tsx src/fleet/demo-txs.ts",
+    "bookkeeper:eval": "tsx src/bookkeeper/eval.ts",
+    "bookkeeper": "tsx src/bookkeeper/run.ts",
+    "api": "tsx src/server/api.ts",
+    "web:dev": "npm --prefix web run dev",
+    "web:build": "npm --prefix web run build"
+  },
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^10.8.0",
+    "better-sqlite3": "^12.11.1",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@circle-fin/cli": "^0.0.6",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "pptxgenjs": "^4.0.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

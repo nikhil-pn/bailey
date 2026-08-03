@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "circleback@claude-plugins-official": true
+  }
+}
